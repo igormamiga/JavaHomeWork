@@ -26,7 +26,7 @@ public class Dog extends Animal {
         System.out.println(name + " спит много много!");
     }
 
-    // @Override
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -35,12 +35,12 @@ public class Dog extends Animal {
                 location.equalsIgnoreCase(dog.location) && food.equalsIgnoreCase(dog.food);
     }
 
-    //@Override
+    @Override
     public int hashCode() {
         return Objects.hash(name, favoriteToy);
     }
 
-    //@Override
+    @Override
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
