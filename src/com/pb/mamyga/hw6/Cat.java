@@ -26,7 +26,7 @@ public class Cat extends Animal {
         System.out.println(name + " спит много!");
     }
 
-   // @Override
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -35,12 +35,12 @@ public class Cat extends Animal {
                 location.equalsIgnoreCase(cat.location) && food.equalsIgnoreCase(cat.food);
     }
 
-    //@Override
+    @Override
     public int hashCode() {
        return Objects.hash(name, likeMilk);
     }
 
-    //@Override
+    @Override
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
