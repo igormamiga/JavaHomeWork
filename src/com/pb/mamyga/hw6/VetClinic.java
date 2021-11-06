@@ -9,7 +9,7 @@ public class VetClinic {
         animals[1] = new Dog("Пес Шарик", "котлеты", "будка", "Мячь");
         animals[2] = new Horse("Лошадь Машка", "яблоки", "конюшня", "Cерая");
 
-        Class vetClazz = Veterinarian.class;//Class.forName("Veterinarian");
+        Class vetClazz = Veterinarian.class;
         Constructor constr = vetClazz.getConstructor(new Class[] {String.class});
         Object obj = constr.newInstance("Добрый доктор Айболит");
 
