@@ -15,7 +15,7 @@ public class NumBox<T extends Number> {
         if(curIndex >= size)
             throw new Exception("Достигнута максимальная длина массива.");
 
-        numbers[++curIndex] = num;
+        numbers[curIndex++] = num;
     }
 
     T get(int i) {
